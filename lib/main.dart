@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ibadah_apps/presentation/bloc/bloc/surah_bloc.dart';
 import 'package:ibadah_apps/presentation/pages/surah/surah_page.dart';
+import 'package:ibadah_apps/presentation/widget/scroll_web.dart';
 import 'locator.dart' as di;
 
 void main() async {
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: MyCustomScrollBehavior(),
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,

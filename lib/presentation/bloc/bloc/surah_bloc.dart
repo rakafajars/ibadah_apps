@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ibadah_apps/domain/entities/surah.dart';
-import 'package:ibadah_apps/domain/usecase/get_surah.dart';
+import 'package:ibadah_apps/domain/usecase/surah/get_surah.dart';
 
 part 'surah_event.dart';
 part 'surah_state.dart';

@@ -3,7 +3,7 @@ import 'package:get_it/get_it.dart';
 import 'package:ibadah_apps/data/datasources/surah_remote_data_source.dart';
 import 'package:ibadah_apps/data/repositories/surah_repository_impl.dart';
 import 'package:ibadah_apps/domain/repositories/surah_repository.dart';
-import 'package:ibadah_apps/domain/usecase/get_surah.dart';
+import 'package:ibadah_apps/domain/usecase/surah/get_surah.dart';
 import 'package:ibadah_apps/presentation/bloc/bloc/surah_bloc.dart';
 
 final locator = GetIt.instance;

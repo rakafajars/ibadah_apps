@@ -3,10 +3,10 @@ import 'package:ibadah_apps/domain/entities/surah.dart';
 
 class SurahModel extends Equatable {
   SurahModel({
-    this.number,
-    this.sequence,
-    this.numberOfVerses,
-    this.name,
+    required this.number,
+    required this.sequence,
+    required this.numberOfVerses,
+    required this.name,
     this.revelation,
     this.tafsir,
   });
