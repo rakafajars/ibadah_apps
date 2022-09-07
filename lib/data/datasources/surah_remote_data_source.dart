@@ -17,10 +17,12 @@ class SurahRemoteDataSourceImpl implements SurahRemoteDataSource {
 
   @override
   Future<List<SurahModel>> getSurah() async {
-    final response = await dio.get('$BASE_URL/surah');
+    final response = await dio.get(
+      '$BASE_URL_QURAN/surah',
+    );
 
     if (response.statusCode == 200) {
-      return SurahResponse.fromJson(json.decode(response.data)).surahList;
+      return SurahResponse.fromJson(response.data).surahList;
     } else {
       throw ServerException();
     }

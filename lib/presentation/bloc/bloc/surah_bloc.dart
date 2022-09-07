@@ -1,5 +1,5 @@
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ibadah_apps/domain/entities/surah.dart';
 import 'package:ibadah_apps/domain/usecase/get_surah.dart';
 

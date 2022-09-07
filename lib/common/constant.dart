@@ -1,1 +1,1 @@
-const String BASE_URL = 'https://api-al-quran-heroku.herokuapp.com';
+const String BASE_URL_QURAN = 'https://my-api-quran.vercel.app';
