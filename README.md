@@ -1,4 +1,14 @@
-# ibadah_apps
+# Ibadah Apps
+
+
+## TODO 
+- [x] Surah 
+- [x] Detail Surah
+- [ ] Sound Surah
+- [ ] Bookmark Surah
+- [ ] Hadits
+- [ ] Detail Hadits
+
 
 ## Built With 🛠
 * [dio](https://pub.dev/packages/dio) - A type-safe HTTP client.
