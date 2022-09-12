@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ibadah_apps/presentation/bloc/bloc/surah_bloc.dart';
+import 'package:ibadah_apps/presentation/bloc/surah/surah_bloc.dart';
+import 'package:ibadah_apps/presentation/pages/surah/surah_detail_page.dart';
 import 'package:ibadah_apps/presentation/pages/surah/surah_page.dart';
 import 'package:ibadah_apps/presentation/widget/scroll_web.dart';
 import 'locator.dart' as di;
@@ -56,34 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(providers: [
-      BlocProvider(create: (context) => di.locator<SurahBloc>()),
-    ], child: SurahPage()
-
-        //  Scaffold(
-        //   appBar: AppBar(
-        //     title: Text(widget.title),
-        //   ),
-        //   body: Center(
-        //     child: Column(
-        //       mainAxisAlignment: MainAxisAlignment.center,
-        //       children: <Widget>[
-        //         const Text(
-        //           'You have pushed the button this many times:',
-        //         ),
-        //         Text(
-        //           '$_counter',
-        //           style: Theme.of(context).textTheme.headline4,
-        //         ),
-        //       ],
-        //     ),
-        //   ),
-        //   floatingActionButton: FloatingActionButton(
-        //     onPressed: _incrementCounter,
-        //     tooltip: 'Increment',
-        //     child: const Icon(Icons.add),
-        //   ), // This trailing comma makes auto-formatting nicer for build methods.
-        // ),
-        );
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => di.locator<SurahBloc>(),
+        ),
+      ],
+      child: SurahDetailPage(),
+    );
   }
 }

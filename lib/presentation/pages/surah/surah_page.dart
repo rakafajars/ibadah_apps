@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ibadah_apps/common/color_theme.dart';
 import 'package:ibadah_apps/common/style_text_theme.dart';
-import 'package:ibadah_apps/presentation/bloc/bloc/surah_bloc.dart';
+import 'package:ibadah_apps/presentation/bloc/surah/surah_bloc.dart';
 
 class SurahPage extends StatelessWidget {
   const SurahPage({super.key});
@@ -10,7 +10,8 @@ class SurahPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<SurahBloc>(
-      create: (context) => context.read<SurahBloc>()..add(FetchSurahEvent()),
+      create: (context) =>
+          context.read<SurahBloc>()..add(const FetchSurahDetailEvent(1)),
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(

@@ -15,6 +15,9 @@ class SurahHasData extends SurahState {
   final List<Surah> result;
 
   const SurahHasData(this.result);
+
+  @override
+  List<Object> get props => [result];
 }
 
 class SurahError extends SurahState {
@@ -23,4 +26,13 @@ class SurahError extends SurahState {
   const SurahError(this.message);
   @override
   List<Object> get props => [message];
+}
+
+class SurahDetailHasData extends SurahState {
+  final SurahDetail result;
+
+  const SurahDetailHasData(this.result);
+
+  @override
+  List<Object> get props => [result];
 }

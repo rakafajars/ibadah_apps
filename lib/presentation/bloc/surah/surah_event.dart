@@ -8,3 +8,12 @@ abstract class SurahEvent extends Equatable {
 }
 
 class FetchSurahEvent extends SurahEvent {}
+
+class FetchSurahDetailEvent extends SurahEvent {
+  final int id;
+
+  const FetchSurahDetailEvent(this.id);
+
+  @override
+  List<Object> get props => [id];
+}

@@ -12,3 +12,8 @@ TextStyle openSansNormal = GoogleFonts.openSans(
 TextStyle openSansMedium = GoogleFonts.openSans(
   fontWeight: FontWeight.w500,
 );
+
+TextStyle robotMonoNormal = GoogleFonts.robotoMono(
+  fontSize: 12,
+  fontWeight: FontWeight.w400,
+);
