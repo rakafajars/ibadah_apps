@@ -1,16 +1,10 @@
 # ibadah_apps
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Built With 🛠
+* [dio](https://pub.dev/packages/dio) - A type-safe HTTP client.
+* [provider](https://pub.dev/packages/provider) - A wrapper around InheritedWidget to make them easier to use and more reusable.
+* [dartz](https://pub.dev/packages/dartz) - Functional programming in Dart
+* [BLoC Pattern](https://bloclibrary.dev/) - Business logic component to separate the business logic with UI.
+* [Equatable](https://pub.dev/packages/equatable) - Being able to compare objects in `Dart` often involves having to override the `==` operator.
+* [Get It](https://pub.dev/packages/get_it) - A Dependency Injection
+* [Google Font](https://pub.dev/packages/google_fonts) - A Flutter package to use fonts from fonts.google.com.
