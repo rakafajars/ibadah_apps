@@ -10,10 +10,8 @@ part 'surah_state.dart';
 
 class SurahBloc extends Bloc<SurahEvent, SurahState> {
   final GetSurah _getSurah;
-  final GetSurahDetail _getSurahDetail;
   SurahBloc(
     this._getSurah,
-    this._getSurahDetail,
   ) : super(SurahEmpty()) {
     on<SurahEvent>(
       (event, emit) async {
@@ -30,14 +28,6 @@ class SurahBloc extends Bloc<SurahEvent, SurahState> {
                 emit(SurahHasData(data));
               }
             },
-          );
-        } else if (event is FetchSurahDetailEvent) {
-          emit(SurahLoading());
-          final result = await _getSurahDetail.execute(event.id);
-
-          result.fold(
-            (failure) => emit(SurahError(failure.message)),
-            (data) => emit(SurahDetailHasData(data)),
           );
         }
       },

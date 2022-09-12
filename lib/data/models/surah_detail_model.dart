@@ -4,7 +4,7 @@ import 'package:equatable/equatable.dart';
 import 'package:ibadah_apps/domain/entities/surah_detail.dart';
 
 class SurahDetailModel extends Equatable {
-  SurahDetailModel({
+  const SurahDetailModel({
     this.number,
     this.sequence,
     this.numberOfVerses,
@@ -15,14 +15,14 @@ class SurahDetailModel extends Equatable {
     this.verses,
   });
 
-  int? number;
-  int? sequence;
-  int? numberOfVerses;
-  NameModel? name;
-  Revelation? revelation;
-  DataTafsir? tafsir;
-  PreBismillah? preBismillah;
-  List<VerseSurahDetailModel>? verses;
+  final int? number;
+  final int? sequence;
+  final int? numberOfVerses;
+  final NameModel? name;
+  final Revelation? revelation;
+  final DataTafsir? tafsir;
+  final PreBismillah? preBismillah;
+  final List<VerseSurahDetailModel>? verses;
 
   factory SurahDetailModel.fromJson(Map<String, dynamic> json) =>
       SurahDetailModel(

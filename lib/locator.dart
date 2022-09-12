@@ -6,6 +6,7 @@ import 'package:ibadah_apps/domain/repositories/surah_repository.dart';
 import 'package:ibadah_apps/domain/usecase/surah/get_surah.dart';
 import 'package:ibadah_apps/domain/usecase/surah/get_surah_detail.dart';
 import 'package:ibadah_apps/presentation/bloc/surah/surah_bloc.dart';
+import 'package:ibadah_apps/presentation/bloc/surah_detail/surah_detail_bloc.dart';
 
 final locator = GetIt.instance;
 
@@ -23,10 +24,10 @@ Future<void> init() async {
 
   // bloc
   locator.registerLazySingleton<SurahBloc>(
-    () => SurahBloc(
-      locator(),
-      locator(),
-    ),
+    () => SurahBloc(locator()),
+  );
+  locator.registerLazySingleton<SurahDetailBloc>(
+    () => SurahDetailBloc(locator()),
   );
 
   // usecase
