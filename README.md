@@ -2,6 +2,7 @@
 
 
 ## TODO 
+- [ ] Home
 - [x] Surah 
 - [x] Detail Surah
 - [ ] Sound Surah
