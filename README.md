@@ -7,6 +7,7 @@
 - [x] Detail Surah
 - [ ] Sound Surah
 - [ ] Bookmark Surah
+- [ ] Local DB Surah
 - [ ] Hadits
 - [ ] Detail Hadits
 
