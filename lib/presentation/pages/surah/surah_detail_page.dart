@@ -27,6 +27,7 @@ class _SurahDetailPageState extends State<SurahDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0.0,
         title: Text(
           'Surah',
           style: openSansMedium,
@@ -41,6 +42,7 @@ class _SurahDetailPageState extends State<SurahDetailPage> {
           } else if (state is SurahDetailHasData) {
             final juz = state.result.verses?.first;
             return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   height: 32,
@@ -75,8 +77,10 @@ class _SurahDetailPageState extends State<SurahDetailPage> {
                 ),
                 Expanded(
                   child: ListView(
+                    shrinkWrap: true,
                     children: [
-                      if (state.result.preBismillah != null) ...[
+                      if (state.result.preBismillah?.text?.arab?.isNotEmpty ==
+                          true) ...[
                         Container(
                           color: Colors.transparent,
                           alignment: Alignment.center,

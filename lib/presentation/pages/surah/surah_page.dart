@@ -15,7 +15,11 @@ class SurahPage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: const Text('Al-Quran'),
+          elevation: 0.0,
+          title: Text(
+            'Al-Quran',
+            style: openSansMedium,
+          ),
         ),
         body: BlocBuilder<SurahBloc, SurahState>(
           builder: (context, state) {
