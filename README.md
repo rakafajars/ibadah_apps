@@ -12,7 +12,7 @@
 - [ ] Hadits
 - [ ] Detail Hadits
 - [ ] Share Hadits
-- [ ] Arah Kiblat
+- [x] Arah Kiblat
 
 ## Built With 🛠
 
@@ -24,3 +24,5 @@
 - [Equatable](https://pub.dev/packages/equatable) - Being able to compare objects in `Dart` often involves having to override the `==` operator.
 - [Get It](https://pub.dev/packages/get_it) - A Dependency Injection
 - [Google Font](https://pub.dev/packages/google_fonts) - A Flutter package to use fonts from fonts.google.com.
+- [Flutter SVG](https://pub.dev/packages/flutter_svg) - Draw SVG (and some Android VectorDrawable (XML)) files on a Flutter Widget
+- [Flutter Qiblah](https://pub.dev/packages/flutter_qiblah) - Flutter Qiblah is a package that allows you to display Qiblah direction in you app with support for both Android and iOS

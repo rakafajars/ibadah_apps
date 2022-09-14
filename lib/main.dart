@@ -4,6 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ibadah_apps/common/routes.dart';
 import 'package:ibadah_apps/presentation/bloc/surah/surah_bloc.dart';
 import 'package:ibadah_apps/presentation/bloc/surah_detail/surah_detail_bloc.dart';
+import 'package:ibadah_apps/presentation/pages/qiblah/compass_qiblah_page.dart';
+import 'package:ibadah_apps/presentation/pages/qiblah/compass_qiblah_widget.dart';
 import 'package:ibadah_apps/presentation/pages/surah/surah_detail_page.dart';
 import 'package:ibadah_apps/presentation/pages/surah/surah_page.dart';
 import 'package:ibadah_apps/presentation/widget/scroll_web.dart';
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const SurahPage(),
+        home: const CompassQiblahPage(),
         onGenerateRoute: (RouteSettings settings) {
           switch (settings.name) {
             case HOME_ROUTE:
