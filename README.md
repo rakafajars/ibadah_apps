@@ -8,9 +8,9 @@
 - [ ] Sound Surah
 - [x] Share Ayat
 - [ ] Bookmark Surah
-- [x] Save Local Ayat
-- [x] Remove Local Ayat
-- [ ] List Local Ayat
+  - [x] Save Local Ayat
+  - [x] Remove Local Ayat
+  - [ ] List Local Ayat
 - [ ] Hadits
 - [ ] Detail Hadits
 - [ ] Share Hadits
