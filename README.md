@@ -6,7 +6,7 @@
 - [x] Surah
 - [x] Detail Surah
 - [ ] Sound Surah
-- [ ] Share Ayat
+- [x] Share Ayat
 - [ ] Bookmark Surah
 - [ ] Local DB Surah
 - [ ] Hadits

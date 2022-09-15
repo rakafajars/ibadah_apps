@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ibadah_apps/common/style_text_theme.dart';
 import 'package:ibadah_apps/presentation/bloc/surah_detail/surah_detail_bloc.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../../common/color_theme.dart';
 
@@ -160,11 +161,36 @@ class _SurahDetailPageState extends State<SurahDetailPage> {
                                     letterSpacing: 0.3,
                                   ),
                                 ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: const Icon(
+                                        Icons.bookmark_border_outlined,
+                                        size: 16,
+                                      ),
+                                    ),
+                                    IconButton(
+                                      onPressed: () async {
+                                        await Share.share(
+                                          '${data?.text?.arab}\n${data?.translation?.id}',
+                                        );
+                                      },
+                                      icon: const Icon(
+                                        Icons.share,
+                                        size: 16,
+                                      ),
+                                    )
+                                  ],
+                                )
                               ],
                             ),
                           );
                         },
-                      )
+                      ),
                     ],
                   ),
                 )
