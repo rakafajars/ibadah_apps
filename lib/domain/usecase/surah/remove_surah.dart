@@ -1,0 +1,15 @@
+import 'package:fpdart/fpdart.dart';
+import 'package:ibadah_apps/common/failure.dart';
+import 'package:ibadah_apps/domain/entities/surah_detail.dart';
+import 'package:ibadah_apps/domain/repositories/surah_repository.dart';
+
+class RemoveSurah {
+  final SurahRepository surahRepository;
+
+  RemoveSurah(this.surahRepository);
+
+  Future<Either<Failure, String>> execute(
+      SurahDetail surahDetail, VerseSurah verseSurah) {
+    return surahRepository.removeSurah(surahDetail, verseSurah);
+  }
+}

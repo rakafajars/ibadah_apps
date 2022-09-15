@@ -8,7 +8,9 @@
 - [ ] Sound Surah
 - [x] Share Ayat
 - [ ] Bookmark Surah
-- [ ] Local DB Surah
+- [ ] Save Local Ayat
+- [ ] Remove Local Ayat
+- [ ] List Local Ayat
 - [ ] Hadits
 - [ ] Detail Hadits
 - [ ] Share Hadits
@@ -26,3 +28,4 @@
 - [Google Font](https://pub.dev/packages/google_fonts) - A Flutter package to use fonts from fonts.google.com.
 - [Flutter SVG](https://pub.dev/packages/flutter_svg) - Draw SVG (and some Android VectorDrawable (XML)) files on a Flutter Widget
 - [Flutter Qiblah](https://pub.dev/packages/flutter_qiblah) - Flutter Qiblah is a package that allows you to display Qiblah direction in you app with support for both Android and iOS
+- [SQFlite](https://pub.dev/packages/sqflite) A SQLite database is a file in the file system identified by a path
