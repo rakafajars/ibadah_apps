@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ibadah_apps/common/routes.dart';
 import 'package:ibadah_apps/presentation/bloc/surah/surah_bloc.dart';
 import 'package:ibadah_apps/presentation/bloc/surah_detail/surah_detail_bloc.dart';
+import 'package:ibadah_apps/presentation/bloc/surah_local/surah_local_bloc.dart';
 import 'package:ibadah_apps/presentation/pages/home/home_page.dart';
 import 'package:ibadah_apps/presentation/pages/qiblah/compass_qiblah_page.dart';
 import 'package:ibadah_apps/presentation/pages/surah/surah_detail_page.dart';
@@ -24,11 +25,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
+        BlocProvider<SurahBloc>(
           create: (context) => di.locator<SurahBloc>(),
         ),
-        BlocProvider(
+        BlocProvider<SurahDetailBloc>(
           create: (context) => di.locator<SurahDetailBloc>(),
+        ),
+        BlocProvider<SurahLocalBloc>(
+          create: (context) => di.locator<SurahLocalBloc>(),
         ),
       ],
       child: MaterialApp(

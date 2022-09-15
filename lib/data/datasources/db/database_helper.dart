@@ -36,9 +36,9 @@ class DatabaseHelper {
     await db.execute('''
       CREATE TABLE $_tblAyat (
         id INTEGER PRIMARY KEY,
-        nameSurah TEXT,
-        ayat TEXT,
-        verseMeaning TEXT
+        arab TEXT,
+        translationId TEXT,
+        nameSurah TEXT
       );
     ''');
   }
